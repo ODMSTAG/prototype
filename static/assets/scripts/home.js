@@ -6,16 +6,6 @@ try {
   inFrame = true
 }
 
-if (!inFrame && !navigator.userAgent.includes('Firefox')) {
-  const popup = open('about:blank', '_blank')
-  if (!popup || popup.closed) {
-    alert('Please allow popups and redirects.')
-  } else {
-    const doc = popup.document
-    const iframe = doc.createElement('iframe')
-    const style = iframe.style
-    const link = doc.createElement('link')
-
     const name = localStorage.getItem('name') || 'My Drive - Google Drive'
     const icon = localStorage.getItem('icon') || 'https://ssl.gstatic.com/docs/doclist/images/drive_2022q3_32dp.png'
 
@@ -74,16 +64,36 @@ document.onkeydown = function (evt) {
 }
 
 let splashtext = [
-  'Over 7 Million Users in 2023!',
+  'Over 7 Million Users in 2024!(holy shit im better)',
   'Fastest growing proxy server!',
-  'Made by Bubbo!',
-  'Check out discord.gg/interstellar :)',
+  'Made by ODMSTAG!',
   'Thanks for using the site',
-  'Follow us on Tiktok (@useinterstellar)',
-  'Subscribe to us on YouTube (@unblocking)',
-  'Subscribe to my Youtube (@xbubbo)',
   'Check out the settings page',
-  'Check out our Patreon (https://www.patreon.com/gointerstellar)',
+  'do donate (im hella poor)',
+    'we also have other services like game piracy! email for details',
+  'V5 doesn't look much different from V4 to be honest',
+  'Check out the apps and games section!',
+  'Why are you here? Go study.',
+  'Right-Click to access more features',
+  'Fun Fact: You can set a custom background by going to settings.',
+  'We have spent and earned zero dollars from Stealth Unblocker.',
+  'Tip: Tab Cloaking is highly recommended!',
+  'Did you know: A snail breathes through its foot',
+  'Fun Fact: 40% of Stealth Unblocker was coded with ChatGPT',
+  'Join our Discord if you have any suggestions!',
+  'Tip: Enable authentication in settings.',
+  'Chromebooks are honestlys L',
+  'Fun Fact: Snakes can predict earthquakes',
+  'You can customize Stealth Unblocker by going to Settings > Themes',
+  'If the particles in the background are lagging the site, you can disable it in Settings.',
+  'daniel is number one gay and pedo',
+  'henry looks like an egg',
+  'bodie more like bootie',
+  'ali: midget powers activate!',
+  'demore plays genshin',
+  'vaylin watchs furry corn',
+  'shane strokes big black things',
+  
 ]
 
 document.getElementById('splash').innerText = splashtext[Math.floor(Math.random() * splashtext.length)]
